@@ -1,0 +1,385 @@
+/* =====================================================
+    Template Name: Strict || Responsive HTML Template
+    Author: Md. Nur Nobi 
+    Version: 1.0.0
+    Created: 16/04/2021
+    File Description: Main Css file of the template   
+
+======================================================*/
+
+/* =====================================================
+                         Varibale
+======================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root{
+    --primary:#2d3950;
+    --secondary: #15a4fa;
+    --text:#999999;
+    --acent:#15a4fa;
+    --white:#ffffff;
+    --primary-fonts:'Lato', sans-serif;
+    --title_font_size:40px;
+    --subtitle_font_size:22px;
+    --text_font_size:20px;
+}
+
+body{
+    font-family: var(--primary-fonts);
+    font-size: var(--text_font_size)!important;
+    line-height: 30px;
+    font-weight: 400;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--primary-fonts);
+    color: var(--primary);    
+}
+h1{
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 130px;
+    font-weight: 700;
+    color:var(--white);
+}
+h2{
+    font-size: var(--title_font_size);
+    line-height: 50px;
+    font-weight: 400;
+}
+h4{
+    font-size: var(--subtitle_font_size);
+    line-height: 30px;
+    font-weight: 400;
+}
+p{
+    font-family: var(--primary-fonts);
+    color: var(--text);
+    font-size: var(--text_font_size)!important;
+    line-height: 30px;
+    font-weight: 400;
+}
+a{
+    font-family: var(--primary-fonts);
+    color: var(--text);
+    font-size: var(--text_font_size)!important;
+    line-height: 30px;
+    font-weight: 400;
+}
+a:hover{
+    color: var(--acent);
+}
+.btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+}
+
+/* =====================================================
+                         Header
+======================================================*/
+
+.navbar{
+    padding:30px 0;
+}
+.nav-link{
+    font-family: var(--primary-fonts);
+    font-size: 16px !important;
+    line-height: 20px;
+    font-weight: 700;
+    color:var(--primary) !important;
+    text-transform: uppercase;
+    padding:0 30px !important;
+    transition: .3s;
+}
+.nav-link:hover{
+    color:var(--acent)!important;
+    transition: .3s;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color:var(--acent)!important;
+}
+.navbar-light .navbar-toggler{
+    color:var(--primary);
+    border-color: var(--primary);
+    border:2px solid;
+}
+.navbar-toggler{
+    padding:5px 10px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    border-color: var(--acent);
+} 
+
+.toggle-icon{
+    color:var(--primary);
+}
+.toggle-icon:hover{
+    color: var(--acent);
+}
+
+/* =====================================================
+                         Slider
+======================================================*/
+.carousel-caption{
+    right: 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.slider-title{
+    position: relative;
+}
+.slider-title span::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: var(--secondary);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.carousel-caption p{
+    color:var(--white);
+    margin-top: 30px;
+}
+.carousel-caption .btn{    
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white);
+    border:1px solid var(--secondary);
+    border-radius: 3px;
+    padding:15px 25px;
+    margin-top: 30px;
+}
+.carousel-caption .btn:hover{
+    background-color: var(--secondary);
+    transition: .3s;
+}
+
+/* =====================================================
+                         About
+======================================================*/
+#about{
+    background-color: #f6f9f9;
+    padding:80px 0;
+}
+
+/* =====================================================
+                         Services
+======================================================*/
+#service{
+    background-color: #fff;
+    padding:80px 0;
+}
+.item .icon{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50,48baff+100 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%, #48baff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%,#48baff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%,#48baff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+
+}
+.item .icon i{
+    font-size: 30px;
+    color:#fff;
+}
+.item h4{
+    margin:15px 0 10px
+}
+.item p{
+    font-size: 15px !important;
+    padding:0 60px;
+}
+
+/* =====================================================
+                         Gallery
+======================================================*/
+#gallery{
+    background-color: #f6f9f9;
+    padding: 80px 0;
+    
+}
+
+.gallery-images img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery-item{
+    position: relative;
+    cursor: pointer;
+    margin:12px 0;
+}
+.gallery-item::before{
+    content: "";
+    position: absolute;
+    background-color: var(--acent);
+    height: 100%;
+    width: 0;
+    display: block;
+    transition: .6s;
+    opacity: 0;
+}
+.gallery-item:hover::before{  
+    opacity: .6;
+    width: 100%;
+}
+.gallery-item:hover .gallery-icon{
+    top:50%;
+    opacity: 1;
+}
+.gallery-icon{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition:.8s;
+}
+.gallery-icon .list-inline{
+    margin-bottom: 0;
+}
+.gallery-icon a{
+    font-size: 15px !important;
+    color:#fff;
+    border:1px solid #fff;
+    height: 40px;
+    width: 40px;
+    display: block;
+    line-height: 40px;
+}
+
+
+/* =====================================================
+                         Contact
+======================================================*/
+#contact{
+    background: url("../images/newsletter.jpg") no-repeat center;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;     
+} 
+#contact::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+    z-index:-1;
+}
+
+#contact .heading h2{
+    color:var(--white);
+}
+
+.contact-form .form-control{
+    background-color: transparent;
+    border-color: var(--text);
+    color:var(--white);
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border-color: var(--acent);
+}
+.contact-form .form-floating>label{
+    font-size: 15px;
+    color:var(--text);
+    line-height: 100%;
+    padding: 20px 20px;
+}
+.contact-form .form-floating>.form-control{
+    padding: 20px 20px;
+}
+.contact-form .form-check-label{
+    color:var(--white);
+    font-size: 18px;
+
+    
+}
+.form-button .btn{
+    height: 50px;
+    width: 140px;
+    line-height: 50px;
+    border-color: var(--acent);
+    background-color: transparent;
+    font-size: 18px;
+    padding:0;
+    position: relative;
+    z-index: 1;
+    transition: .4s all ease-in-out;
+
+}
+.form-button .btn::before{
+    content:"";
+    position: absolute;
+    background-color: var(--acent);
+    height: 100%;
+    width: 0;
+    left: 0;
+    top:0;
+    z-index: -1;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+.form-button .btn:hover{
+    color:var(--primary) !important;
+}
+.form-button .btn:hover::before{
+   opacity: 1;
+   width: 100%;
+}
+
+
+
+/* =====================================================
+                         Footer
+======================================================*/
+footer{
+    padding:30px 0;
+}
+.copyright{
+    font-size: 15px !important;
+    color:var(--text)
+}
+
+.social-menu{
+    text-align: right;
+}
+.social-menu ul li a{
+    font-size: 15px !important;
+    color:var(--white);
+    text-align: center;
+    display: block;
+    background-color: var(--acent);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+.social-menu ul li a:hover{
+    background-color: var(--primary);
+
+}
