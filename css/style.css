@@ -23,6 +23,9 @@
     --subtitle_font_size:22px;
     --text_font_size:20px;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     font-family: var(--primary-fonts);
@@ -86,6 +89,9 @@ a:hover{
 
 .navbar{
     padding:30px 0;
+    height: 100px;
+    transition: .3s all ease-in-out;
+
 }
 .nav-link{
     font-family: var(--primary-fonts);
@@ -123,7 +129,15 @@ a:hover{
 .toggle-icon:hover{
     color: var(--acent);
 }
+.navbar-collapse{
+    background-color: #f5f5f5;
+}
 
+.nav-bg{
+    background-color: var(--white) !important;
+    box-shadow: 0px -27px 53px var(--primary);
+    height: 80px;
+}
 /* =====================================================
                          Slider
 ======================================================*/
@@ -164,6 +178,15 @@ a:hover{
     background-color: var(--secondary);
     transition: .3s;
 }
+.carousel-prev-icon,.carousel-next-icon{
+    background-color: var(--primary);
+    padding:10px 12px;
+
+}
+.carousel-prev-icon i, .carousel-next-icon i{
+    font-size: 25px;
+    color:var(--white);
+}
 
 /* =====================================================
                          About
@@ -171,6 +194,10 @@ a:hover{
 #about{
     background-color: #f6f9f9;
     padding:80px 0;
+}
+.about-content span{
+    color:var(--acent);
+    font-weight: 700;
 }
 
 /* =====================================================
@@ -382,4 +409,31 @@ footer{
 .social-menu ul li a:hover{
     background-color: var(--primary);
 
+}
+
+/* =====================================================
+                         Scroll-Top
+======================================================*/
+.scroll-top{
+    text-align: right;
+    z-index: 10;
+    opacity: 0;
+}
+.activeScroll{   
+    opacity: 1;
+}
+.scroll-top a{
+    font-size: 30px !important;
+    text-align: center;
+    color:var(--white);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;    
+    display: block;
+    margin-left: auto;
+    background-color: var(--acent);
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 1;
 }
