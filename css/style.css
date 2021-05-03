@@ -290,8 +290,162 @@ a:hover{
     display: block;
     line-height: 40px;
 }
+/* =====================================================
+                         Counter
+======================================================*/
+#counter{     
+    padding: 80px 0;  
+    background-image: url(../images/counter-bg.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;    
+    position: relative;
+    z-index: 1;
+}
+#counter::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index:-1;
+}
+
+.counter-container .icon i{
+    color:var(--acent);
+    font-size: 35px;
+}
+.counter-container h2{
+    color:var(--white);
+    font-size: var(--subtitle_font_size);
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+.counter-container h2::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    background-color: var(--acent);
+}
+.counter-container span{
+    color:var(--white);
+    font-size: var(--title_font_size);
+    text-transform: capitalize;
+    margin-top:30px;
+}
+/* =====================================================
+                         Team
+======================================================*/
+#team{
+    background-color: #F6F9F9;
+    padding:80px 0;
+}
+.slick-slide{
+    margin:0 15px;
+}
+.team-container{
+    width: 100%;
+}
+.team-container img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.member-content h4{
+    font-size: var(--subtitle_font_size);
+    text-transform: capitalize;
+    color:var(--white);
+    margin-bottom: 0;
+    position: relative;
+
+}
+.member-content h4::before{
+    content: "";
+    position: absolute;
+    background-color: var(--acent);
+    height: 2px;
+    width: 30%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+}
+.member-content p{
+    font-size: 18px !important;
+    color:var(--white);
+    
+}
+.member-content .social a{
+    color: var(--white);
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: var(--acent);
+    display: block;
+    text-align: center;    
+}
+.team-container{
+    position: relative;
+    cursor: pointer;
+    margin:15px 0;
+}
+.team-container::before{
+    content:"";
+    position: absolute;
+    background-color: var(--primary);
+    height: 0;
+    top:0;
+    left: 0;
+    width: 100%;
+    opacity: .7;
+    transition: .6s;
+}
+.team-container:hover::before{
+    height: 100%; 
+}
+.team-container:hover .member-content{
+    top:50%;
+    opacity: 1;
+}
+
+.member-content{
+    position: absolute;
+    top:70%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);   
+    transition: .7s;
+    opacity: 0;
+}
 
 
+
+/* =====================================================
+                         Team
+======================================================*/
+/* =====================================================
+                         Progress
+======================================================*/
+#progress{
+    padding:80px 0;
+}
+.circlechart{
+    padding:30px 0;
+}
 /* =====================================================
                          Contact
 ======================================================*/
